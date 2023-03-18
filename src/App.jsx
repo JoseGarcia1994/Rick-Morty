@@ -75,7 +75,7 @@ function App() {
         
       </div>
 
-      <div className='body__container'>
+      <div className='body__container' style={{ backgroundImage: "url(background.png)" }}>
   
         <div className='body'>
           <div className='location'>
