@@ -115,7 +115,7 @@
     
     .header__container {
         width: 100%;
-        background-image: url(background-header.png);
+        background-image: url("/background-header.png");
         height: 180px;
     }
     
@@ -199,7 +199,7 @@
 
     .header__container {
         width: 100%;
-        background-image: url(background-header.png);
+        background-image: url("/background-header.png");
         height: 200px;
     }
     
@@ -283,7 +283,7 @@
 
     .header__container {
         width: 100%;
-        background-image: url(background-header.png);
+        background-image: url("/background-header.png");
         height: 200px;
     }
     
@@ -367,7 +367,7 @@
 
     .header__container {
         width: 100%;
-        background-image: url(background-header.png);
+        background-image: url("/background-header.png");
         height: 205px;
     }
     
@@ -452,6 +452,7 @@
     .header__container {
         width: 100%;
         height: 205px;
+        background-image: url("/background-header.png");
     }
     
     .header {
@@ -534,7 +535,7 @@
 
     .header__container {
         width: 100%;
-        background-image: url(background-header.png);
+        background-image: url("/background-header.png");
         height: 220px;
     }
     
@@ -619,6 +620,7 @@
     .header__container {
         width: 100%;
         height: 220px;
+        background-image: url("/background-header.png");
     }
     
     .header {
