@@ -9,22 +9,16 @@ import Page from './components/Page'
 function App() {
   
   const [rickMortyLocation, setRickMortyLocation] = useState( [] )
-  const [randomLocation, setRandomLocation] = useState(1);
 
   useEffect(() => {
     
     axios
-        .get(`https://rickandmortyapi.com/api/location/${randomLocation}`)
+        .get(`https://rickandmortyapi.com/api/location/${ Math.floor(Math.random() * 127)}`)
         .then( (resp) => setRickMortyLocation(resp.data))
         .catch( (error) => console.error(error)  )
 
   }, [])
 
-  const generateRandomNumber = () => {
-    const numberRandom = Math.floor(Math.random(1) * 126);
-    setRandomLocation(numberRandom);
-  };
-  
   const [search, setSearch] = useState("")
 
   const searchBtn = (e) => {
@@ -65,7 +59,8 @@ function App() {
               className='input' 
               type="text"
               value={search}
-              onChange={ (e) => setSearch(e.target.value)} 
+              onChange={ (e) => setSearch(e.target.value)}
+              required 
               /> 
             </div>
           
@@ -75,7 +70,7 @@ function App() {
         
       </div>
 
-      <div className='body__container' style={{ backgroundImage: "url(background.png)" }}>
+      <div className='body__container'>
   
         <div className='body'>
           <div className='location'>

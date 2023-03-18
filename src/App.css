@@ -88,19 +88,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     width: 140px;
     height: 70px;
 }
 
 .location__title {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .location__p {
     color: #ffffff;
     font-size: 16px;
+    text-align: center;
 }
 
 /* =============================== PAGE =========================== */
@@ -195,17 +196,17 @@
         justify-content: space-around;
         align-items: center;
         width: 20.4vw;
-        height: 35px;
+        height: 40px;
     }
 
     .location__title {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 3.2vw;
     }
 
     .location__p {
         color: #ffffff;
-        font-size: 9px;
+        font-size: 2.1vw;
     }
 
  /* =============================== PAGE =========================== */
@@ -295,17 +296,17 @@
         justify-content: space-around;
         align-items: center;
         width: 20.4vw;
-        height: 35px;
+        height: 45px;
     }
 
     .location__title {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 3.2vw;
     }
 
     .location__p {
         color: #ffffff;
-        font-size: 9px;
+        font-size: 2.1vw;
     }
 
  /* =============================== PAGE =========================== */
@@ -398,17 +399,17 @@
         justify-content: space-around;
         align-items: center;
         width: 20.4vw;
-        height: 40px;
+        height: 48px;
     }
 
     .location__title {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 3.4vw;
     }
 
     .location__p {
         color: #ffffff;
-        font-size: 2.3vw;
+        font-size: 2.2vw;
     }
 
  /* =============================== PAGE =========================== */
@@ -501,7 +502,7 @@
         justify-content: space-around;
         align-items: center;
         width: 20.4vw;
-        height: 40px;
+        height: 50px;
     }
 
     .location__title {
@@ -604,17 +605,17 @@
         justify-content: space-around;
         align-items: center;
         width: 107px;
-        height: 40px;
+        height: 50px;
     }
 
     .location__title {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 2.8vw;
     }
 
     .location__p {
         color: #ffffff;
-        font-size: 2.3vw;
+        font-size: 2.2vw;
     }
 
  /* =============================== PAGE =========================== */
@@ -707,17 +708,17 @@
         justify-content: space-around;
         align-items: center;
         width: 107px;
-        height: 40px;
+        height: 50px;
     }
 
     .location__title {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 16px;
     }
 
     .location__p {
         color: #ffffff;
-        font-size: 2.3vw;
+        font-size: 12px;
     }
 
  /* =============================== PAGE =========================== */
@@ -810,17 +811,17 @@
         justify-content: space-around;
         align-items: center;
         width: 107px;
-        height: 40px;
+        height: 60px;
     }
 
     .location__title {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 2vw;
     }
 
     .location__p {
         color: #ffffff;
-        font-size: 2.3vw;
+        font-size: 1.5vw;
     }
 
  /* =============================== PAGE =========================== */
@@ -842,60 +843,3 @@
     
 
 }
-
-/* 
-@media screen and (min-width: 720px) and (max-width: 775px) {
-
-    /* ========== INFO CONTAINER ========== 
-
-.residents__span {
-    color: rgba(229, 235, 224, 0.575);
-}
-
- =============================== LOCATION =========================== 
-
-.location__info {
-    width: 123px;
-    height: 60px;
-}
-
-.location__title {
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.location__p {
-    color: #ffffff;
-    font-size: 12px;
-}
-
-/* =============================== PAGE =========================== 
-
-.page {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-}
-
-.page__p {
-    color: #ffffff;
-    text-align: center;
-}
-
-.page__btn {
-    width: 80px;
-    height: 20px;
-    transition: all .3s;
-}
-
-.page__btn:hover {
-    background-color: #8EFF8B;
-    color: #111111;
-    -webkit-box-shadow: 30px 23px 23px -8px rgba(134,184,40,1);
-    -moz-box-shadow: 30px 23px 23px -8px rgba(134,184,40,1);
-    box-shadow: 30px 23px 23px -8px rgba(134,184,40,1);
-}
-
-} */
