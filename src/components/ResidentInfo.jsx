@@ -14,8 +14,6 @@ const ResidentInfo = ( {url} ) => {
             .catch((error) => console.error(error) )
 
     }, [])
-    
-    console.log(resident);
 
     // UPDATE THIS IF FUNCTION AND PUT IT INSIDE THE CARD
 

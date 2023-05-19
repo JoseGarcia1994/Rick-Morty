@@ -38,12 +38,12 @@ function App() {
     setSearch("")
   }
 
+/* ===========================PAGES============================ */
+
   const [page, setPage] = useState(1)
-  const perPage = 4 
+  const perPage = 6 
   const qtyPage = Math.ceil(rickMortyLocation.residents?.length / perPage) 
-
-  const firstIndex = (page- 1 ) * perPage
-
+  const firstIndex = ( page - 1 ) * perPage
   const residents = rickMortyLocation.residents?.slice( firstIndex, firstIndex + perPage)
 
   return (

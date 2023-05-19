@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-
 .header__container {
     width: 100%;
+    height: 180px;
     background-image: url("/background-header.png");
     display: grid; 
     grid-template-columns: 1fr; 
@@ -18,35 +18,34 @@
 }
 
 .header {
-    max-width: 1000px;
-    display: grid; 
-    grid-template-columns: 1000px; 
-    grid-template-rows: 300px 100px; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "."
-    "."; 
-}
+    max-width: 100%;
+    height: 180px;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 140px 40px;
+    justify-content: space-between;
+    }
 
 .header__img {
-    width: 1000px;
-    height: 400px;
+    width: 100vw;
+    height: 180px;
 }
 
 .form {
+    width: 100vw;
+    height: 25px;
     display: flex;
     justify-content: center;
-    height: 100px;
 }
 
 .form__input {
-    width: 350px;
-    height: 60px;
+    width: 180px;
+    height: 25px;
 }
 
 .input {
-    width: 350px;
-    height: 60px;
+    width: 100%;
+    height: 25px;
     background-color: transparent; 
     border: solid #8EFF8B;
     text-align: center;
@@ -55,15 +54,13 @@
 }
 
 .form__btn {
-    width: 215px;
-    height: 60px;
-    font-size: 20px;
+    width: 104.75px;
+    height: 25px;
+    font-size: 2.5vw;
     border: solid #8EFF8B;
     background-color: #3a9637;
     color: #fbfbfb;
 }
-
-
 
 /* =============================== BODY =========================== */
 
@@ -73,17 +70,17 @@
     background-image: url("/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 .body {
-    max-width: 1000px;
     width: 100%; 
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 /* =============================== LOCATION =========================== */
@@ -93,609 +90,302 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    width: 100%;
+    height: 100px;
+    gap: 1rem;
 }
 
 /* =============================== CARD =========================== */
 
 .card {
-
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 437px);
+    grid-template-columns: repeat(1, 300px);
     justify-content: center;
+    justify-items: center;
     gap: 2rem;
-    height: auto;
 }
 
+/* =============================== MEDIA QUERIES =========================== */
 
-
-
-
-@media screen and (min-width: 320px) and (max-width: 375px) {
-    
-    .header__container {
-        width: 100%;
-        background-image: url("/background-header.png");
-        height: 180px;
-    }
-    
-    .header {
-       max-width: 100%;
-       height: 180px;
-       display: grid;
-       grid-template-columns: 100vw;
-       grid-template-rows: 140px 40px;
-       justify-content: space-between;
-    }
-
-    .header__img {
-        width: 100vw;
-        height: 140px;
-    }
-
-    .form {
-        width: 100vw;
-        height: 60px;
-    }
-    
-    .form__input {
-        width: 56.3vw;
-        height: 25px;
-    }
-    
-    .input {
-        width: 56.3vw;
-        height: 25px;
-    }
-    
-    .form__btn {
-        width: 25vw;
-        height: 25px;
-        font-size: 2.5vw;
-    }
-
-    /* =============================== BODY =========================== */
-
-    .body__container {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    .body {
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    /* =============================== LOCATION =========================== */
-
-    .location {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 80px;
-    }
-
-    /* =============================== CARD =========================== */
-
-    .card {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
-    }
-}
-
-@media screen and (min-width: 376px) and (max-width: 420px) {
+@media screen and (min-width: 420px) and (max-width: 550px) {
 
     .header__container {
-        width: 100%;
-        background-image: url("/background-header.png");
-        height: 200px;
-    }
-    
-    .header {
-       max-width: 100%;
-       height: 200px;
-       display: grid;
-       grid-template-columns: 100vw;
-       grid-template-rows: 140px 40px;
-       justify-content: space-between;
-    }
-
-    .header__img {
-        width: 100vw;
-        height: 160px;
-    }
-
-    .form {
-        width: 100vw;
-        height: 40px;
-    }
-    
-    .form__input {
-        width: 56.3vw;
-        height: 25px;
-    }
-    
-    .input {
-        width: 56.3vw;
-        height: 25px;
-    }
-    
-    .form__btn {
-        width: 25vw;
-        height: 25px;
-        font-size: 2.5vw;
-    }
-
-    /* =============================== BODY =========================== */
-
-    .body__container {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    .body {
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    /* =============================== LOCATION =========================== */
-
-    .location {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 80px;
-    }
-
-    /* =============================== CARD =========================== */
-
-    .card {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
-    }
-}
-
-@media screen and (min-width: 421px) and (max-width: 475px) {
-
-    .header__container {
-        width: 100%;
-        background-image: url("/background-header.png");
-        height: 200px;
-    }
-    
-    .header {
-       max-width: 100%;
-       height: 200px;
-       display: grid;
-       grid-template-columns: 100vw;
-       grid-template-rows: 140px 40px;
-       justify-content: space-between;
-    }
-
-    .header__img {
-        width: 100vw;
-        height: 160px;
-    }
-
-    .form {
-        width: 100vw;
-        height: 40px;
-    }
-    
-    .form__input {
-        width: 56.3vw;
-        height: 27px;
-    }
-    
-    .input {
-        width: 56.3vw;
-        height: 27px;
-    }
-    
-    .form__btn {
-        width: 25vw;
-        height: 27px;
-        font-size: 2.5vw;
-    }
-
-    /* =============================== BODY =========================== */
-
-    .body__container {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    .body {
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    /* =============================== LOCATION =========================== */
-
-    .location {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 80px;
-    }
-
-    /* =============================== CARD =========================== */
-
-    .card {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
-    }
-}
-
-@media screen and (min-width: 476px) and (max-width: 520px) {
-
-    .header__container {
-        width: 100%;
-        background-image: url("/background-header.png");
         height: 205px;
     }
     
     .header {
-       max-width: 100%;
-       height: 200px;
-       display: grid;
-       grid-template-columns: 100vw;
-       grid-template-rows: 145px 40px;
-       justify-content: space-between;
-    }
-
-    .header__img {
-        width: 100vw;
-        height: 165px;
-    }
-
-    .form {
-        width: 100vw;
-        height: 40px;
-    }
-    
-    .form__input {
-        width: 56.3vw;
-        height: 27px;
-    }
-    
-    .input {
-        width: 56.3vw;
-        height: 27px;
-    }
-    
-    .form__btn {
-        width: 25vw;
-        height: 27px;
-        font-size: 2.5vw;
-    }
-
-    /* =============================== BODY =========================== */
-
-    .body__container {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    .body {
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    /* =============================== LOCATION =========================== */
-
-    .location {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 100px;
-    }
-
-    /* =============================== CARD =========================== */
-
-    .card {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
-    }
-}
-
-@media screen and (min-width: 521px) and (max-width: 575px) {
-
-    .header__container {
-        width: 100%;
-        height: 205px;
-        background-image: url("/background-header.png");
-    }
-    
-    .header {
-       max-width: 100%;
-       height: 200px;
-       display: grid;
-       grid-template-columns: 100vw;
+       height: 205px;
        grid-template-rows: 150px 40px;
-       justify-content: space-between;
+       gap: 14px;
     }
 
     .header__img {
-        width: 100vw;
-        height: 170px;
+        height: 205px;
     }
 
-    .form {
-        width: 100vw;
-        height: 40px;
+    .form__input {
+        width: 200px;
+    }
+
+
+    /* =============================== LOCATION =========================== */
+
+    .location {
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 680px) {
+
+    .header__container {
+        height: 220px;
+    }
+    
+    .header {
+       height: 220px;
+       grid-template-rows: 160px 40px;
+       gap: 14px;
+    }
+
+    .header__img {
+        height: 220px;
     }
     
     .form__input {
-        width: 290px;
-        height: 27px;
+        width: 260px;
+        height: 29px;
+        font-size: 22px;
     }
     
     .input {
         width: 293px;
-        height: 27px;
+        height: 29px;
     }
     
     .form__btn {
-        width: 135px;
-        height: 27px;
-        font-size: 2.5vw;
-    }
-
-    /* =============================== BODY =========================== */
-
-    .body__container {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    .body {
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+        width: 100px;
+        height: 29px;
+        font-size: 17px;
     }
 
     /* =============================== LOCATION =========================== */
 
     .location {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
         height: 100px;
     }
 
-    /* =============================== CARD =========================== */
-
-    .card {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
-    }
 }
 
-@media screen and (min-width: 576px) and (max-width: 620px) {
+@media screen and (min-width: 681px) and (max-width: 900px) {
 
     .header__container {
-        width: 100%;
-        background-image: url("/background-header.png");
         height: 220px;
     }
     
     .header {
-       max-width: 100%;
-       height: 200px;
-       display: grid;
-       grid-template-columns: 100vw;
+       height: 220px;
        grid-template-rows: 160px 40px;
-       justify-content: space-between;
+       gap: 14px;
     }
 
     .header__img {
-        width: 100vw;
-        height: 190px;
-    }
-
-    .form {
-        width: 100vw;
-        height: 40px;
-    }
-    
-    .form__input {
-        width: 290px;
-        height: 27px;
-    }
-    
-    .input {
-        width: 293px;
-        height: 27px;
-    }
-    
-    .form__btn {
-        width: 135px;
-        height: 27px;
-        font-size: 2.5vw;
-    }
-
-    /* =============================== BODY =========================== */
-
-    .body__container {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
-    .body {
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    /* =============================== LOCATION =========================== */
-
-    .location {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 100px;
-    }
-
-    /* =============================== CARD =========================== */
-
-    .card {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
-    }
-}
-
-@media screen and (min-width: 720px) and (max-width: 775px) {
-
-    .header__container {
-        width: 100%;
         height: 220px;
-        background-image: url("/background-header.png");
-    }
-    
-    .header {
-       max-width: 100%;
-       height: 200px;
-       display: grid;
-       grid-template-columns: 100vw;
-       grid-template-rows: 160px 40px;
-       justify-content: space-between;
-    }
-
-    .header__img {
-        width: 100vw;
-        height: 190px;
-    }
-
-    .form {
-        width: 100vw;
-        height: 40px;
     }
     
     .form__input {
-        width: 290px;
-        height: 27px;
+        width: 260px;
+        height: 29px;
     }
     
     .input {
-        width: 293px;
-        height: 27px;
+        width: 100%;
+        height: 29px;
     }
     
     .form__btn {
-        width: 135px;
-        height: 27px;
-        font-size: 2.5vw;
+        width: 100px;
+        height: 29px;
+        font-size: 18px;
     }
 
     /* =============================== BODY =========================== */
 
-    .body__container {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-
     .body {
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
         gap: 30px;
     }
 
     /* =============================== LOCATION =========================== */
 
     .location {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
         height: 100px;
     }
 
     /* =============================== CARD =========================== */
 
     .card {
+        grid-template-columns: repeat(2, 300px);
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+
+    .header__container {
+        height: 220px;
+    }
+    
+    .header {
+       height: 220px;
+       grid-template-rows: 160px 40px;
+       gap: 14px;
+    }
+
+    .header__img {
+        height: 220px;
+    }
+    
+    .form__input {
+        width: 260px;
+        height: 29px;
+    }
+    
+    .input {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
+        height: 29px;
+    }
+    
+    .form__btn {
+        width: 100px;
+        height: 29px;
+        font-size: 19px;
+    }
+
+    /* =============================== BODY =========================== */
+
+    .body {
+        gap: 30px;
+    }
+
+    /* =============================== LOCATION =========================== */
+
+    .location {
+        height: 100px;
+    }
+
+    /* =============================== CARD =========================== */
+
+    .card {
+        grid-template-columns: repeat(2, 300px);
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+
+    .header__container {
+        height: 220px;
+    }
+    
+    .header {
+       height: 220px;
+       grid-template-rows: 160px 40px;
+       gap: 14px;
+    }
+
+    .header__img {
+        height: 220px;
+    }
+    
+    .form__input {
+        width: 260px;
+        height: 29px;
+    }
+    
+    .input {
+        width: 100%;
+        height: 29px;
+    }
+    
+    .form__btn {
+        width: 100px;
+        height: 29px;
+        font-size: 20px;
+    }
+
+    /* =============================== BODY =========================== */
+
+    .body {
+        gap: 30px;
+    }
+
+    /* =============================== LOCATION =========================== */
+
+    .location {
+        height: 100px;
+    }
+
+    /* =============================== CARD =========================== */
+
+    .card {
+        grid-template-columns: repeat(3, 300px);
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    .header__container {
+        height: 220px;
+    }
+    
+    .header {
+       height: 220px;
+       grid-template-rows: 160px 40px;
+       gap: 14px;
+    }
+
+    .header__img {
+        height: 230px;
+    }
+    
+    .form__input {
+        width: 260px;
+        height: 29px;
+    }
+    
+    .input {
+        width: 100%;
+        height: 29px;
+    }
+    
+    .form__btn {
+        width: 100px;
+        height: 29px;
+        font-size: 20px;
+    }
+
+    /* =============================== BODY =========================== */
+
+    .body__container {
+        background-position: unset;
+    }
+
+    .body {
+        gap: 30px;
+    }
+
+    /* =============================== LOCATION =========================== */
+
+    .location {
+        height: 100px;
+    }
+
+    /* =============================== CARD =========================== */
+
+    .card {
+        grid-template-columns: repeat(3, 300px);
+        height: auto;
     }
 }
 
