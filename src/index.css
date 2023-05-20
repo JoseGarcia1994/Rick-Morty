@@ -28,7 +28,11 @@
 
 .header__img {
     width: 100vw;
+<<<<<<< HEAD
     height: 150px;
+=======
+    height: 180px;
+>>>>>>> 5aafde267cbe930f785033ad7e5a2d0c151e8071
 }
 
 .form {
@@ -99,6 +103,7 @@
 
 .card {
     width: 100%;
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
 }
@@ -145,6 +150,48 @@
 @media screen and (min-width: 551px) and (max-width: 680px) {
 
     .header__container {
+=======
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+/* =============================== MEDIA QUERIES =========================== */
+
+@media screen and (min-width: 420px) and (max-width: 550px) {
+
+    .header__container {
+        height: 205px;
+    }
+    
+    .header {
+       height: 205px;
+       grid-template-rows: 150px 40px;
+       gap: 14px;
+    }
+
+    .header__img {
+        height: 205px;
+    }
+
+    .form__input {
+        width: 200px;
+    }
+
+
+    /* =============================== LOCATION =========================== */
+
+    .location {
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 680px) {
+
+    .header__container {
+>>>>>>> 5aafde267cbe930f785033ad7e5a2d0c151e8071
         height: 220px;
     }
     
@@ -225,6 +272,176 @@
 
     .location {
         height: 100px;
+<<<<<<< HEAD
+=======
+    }
+
+    /* =============================== CARD =========================== */
+
+    .card {
+        grid-template-columns: repeat(2, 300px);
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+
+    .header__container {
+        height: 220px;
+    }
+    
+    .header {
+       height: 220px;
+       grid-template-rows: 160px 40px;
+       gap: 14px;
+    }
+
+    .header__img {
+        height: 220px;
+    }
+    
+    .form__input {
+        width: 260px;
+        height: 29px;
+    }
+    
+    .input {
+        width: 100%;
+        height: 29px;
+    }
+    
+    .form__btn {
+        width: 100px;
+        height: 29px;
+        font-size: 19px;
+    }
+
+    /* =============================== BODY =========================== */
+
+    .body {
+        gap: 30px;
+    }
+
+    /* =============================== LOCATION =========================== */
+
+    .location {
+        height: 100px;
+    }
+
+    /* =============================== CARD =========================== */
+
+    .card {
+        grid-template-columns: repeat(2, 300px);
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+
+    .header__container {
+        height: 220px;
+    }
+    
+    .header {
+       height: 220px;
+       grid-template-rows: 160px 40px;
+       gap: 14px;
+    }
+
+    .header__img {
+        height: 220px;
+    }
+    
+    .form__input {
+        width: 260px;
+        height: 29px;
+    }
+    
+    .input {
+        width: 100%;
+        height: 29px;
+    }
+    
+    .form__btn {
+        width: 100px;
+        height: 29px;
+        font-size: 20px;
+    }
+
+    /* =============================== BODY =========================== */
+
+    .body {
+        gap: 30px;
+    }
+
+    /* =============================== LOCATION =========================== */
+
+    .location {
+        height: 100px;
+    }
+
+    /* =============================== CARD =========================== */
+
+    .card {
+        grid-template-columns: repeat(3, 300px);
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    .header__container {
+        height: 220px;
+    }
+    
+    .header {
+       height: 220px;
+       grid-template-rows: 160px 40px;
+       gap: 14px;
+    }
+
+    .header__img {
+        height: 230px;
+    }
+    
+    .form__input {
+        width: 260px;
+        height: 29px;
+    }
+    
+    .input {
+        width: 100%;
+        height: 29px;
+    }
+    
+    .form__btn {
+        width: 100px;
+        height: 29px;
+        font-size: 20px;
+    }
+
+    /* =============================== BODY =========================== */
+
+    .body__container {
+        background-position: unset;
+    }
+
+    .body {
+        gap: 30px;
+    }
+
+    /* =============================== LOCATION =========================== */
+
+    .location {
+        height: 100px;
+    }
+
+    /* =============================== CARD =========================== */
+
+    .card {
+        grid-template-columns: repeat(3, 300px);
+        height: auto;
+>>>>>>> 5aafde267cbe930f785033ad7e5a2d0c151e8071
     }
 }
 

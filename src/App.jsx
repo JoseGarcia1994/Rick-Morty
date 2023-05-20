@@ -18,8 +18,11 @@ function App() {
 
   }, [])
 
+<<<<<<< HEAD
   /* ===========================SEARCH BY LOCATION============================ */
 
+=======
+>>>>>>> 5aafde267cbe930f785033ad7e5a2d0c151e8071
   const [search, setSearch] = useState("")
 
   const searchBtn = (e) => {
