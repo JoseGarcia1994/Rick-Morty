@@ -12,11 +12,7 @@ const ResidentInfo = ( {url} ) => {
             .catch((error) => console.error(error) )
 
     }, [])
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 5aafde267cbe930f785033ad7e5a2d0c151e8071
     // UPDATE THIS IF FUNCTION AND PUT IT INSIDE THE CARD
 
     const backgroundStatus = () => {
