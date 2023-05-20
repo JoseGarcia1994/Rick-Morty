@@ -1,5 +1,4 @@
 
-
 const Location = ( { data } ) => {
     return (
       <div className="location__container">

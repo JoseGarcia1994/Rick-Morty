@@ -1,13 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-
 const ResidentInfo = ( {url} ) => {
 
     const [resident, setResident] = useState({})
 
     useEffect(() => {
-        
         axios   
             .get( url )
             .then( (resp) => setResident(resp.data))
@@ -15,8 +13,6 @@ const ResidentInfo = ( {url} ) => {
 
     }, [])
     
-    console.log(resident);
-
     // UPDATE THIS IF FUNCTION AND PUT IT INSIDE THE CARD
 
     const backgroundStatus = () => {

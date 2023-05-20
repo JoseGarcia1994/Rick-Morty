@@ -1,4 +1,3 @@
-
 import './App.css'
 import Location from './components/Location'
 import axios from 'axios'
@@ -9,26 +8,21 @@ import Page from './components/Page'
 function App() {
   
   const [rickMortyLocation, setRickMortyLocation] = useState( [] )
-  const [randomLocation, setRandomLocation] = useState(1);
 
   useEffect(() => {
     
     axios
-        .get(`https://rickandmortyapi.com/api/location/${randomLocation}`)
+        .get(`https://rickandmortyapi.com/api/location/${ Math.floor(Math.random() * 127)}`)
         .then( (resp) => setRickMortyLocation(resp.data))
         .catch( (error) => console.error(error)  )
 
   }, [])
 
-  const generateRandomNumber = () => {
-    const numberRandom = Math.floor(Math.random(1) * 126);
-    setRandomLocation(numberRandom);
-  };
-  
+  /* ===========================SEARCH BY LOCATION============================ */
+
   const [search, setSearch] = useState("")
 
   const searchBtn = (e) => {
-    
     e.preventDefault()
 
     axios
@@ -44,12 +38,12 @@ function App() {
     setSearch("")
   }
 
+/* ===========================PAGES============================ */
+
   const [page, setPage] = useState(1)
-  const perPage = 4 
+  const perPage = 6 
   const qtyPage = Math.ceil(rickMortyLocation.residents?.length / perPage) 
-
-  const firstIndex = (page- 1 ) * perPage
-
+  const firstIndex = ( page - 1 ) * perPage
   const residents = rickMortyLocation.residents?.slice( firstIndex, firstIndex + perPage)
 
   return (
@@ -65,7 +59,8 @@ function App() {
               className='input' 
               type="text"
               value={search}
-              onChange={ (e) => setSearch(e.target.value)} 
+              onChange={ (e) => setSearch(e.target.value)}
+              required 
               /> 
             </div>
           
@@ -75,7 +70,7 @@ function App() {
         
       </div>
 
-      <div className='body__container' style={{ backgroundImage: "url(background.png)" }}>
+      <div className='body__container'>
   
         <div className='body'>
           <div className='location'>
@@ -90,14 +85,17 @@ function App() {
           </div>
           
           <div className='card'>
-            { 
-              residents?.map( (resUrl) => (
-              <ResidentInfo 
-              url={resUrl}
-              key={resUrl}
-              />
-              ))
-            }
+            <div className='card__contain'>
+              { 
+                residents?.map( (resUrl) => (
+                <ResidentInfo 
+                url={resUrl}
+                key={resUrl}
+                />
+                ))
+              }
+            </div>
+            
           </div>
           
 

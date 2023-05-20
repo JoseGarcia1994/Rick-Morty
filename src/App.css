@@ -2,78 +2,72 @@
 
 .residents__card {
     display: grid; 
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    width: 437px;
-    height: 640px;
+    grid-template-rows: 1fr;
+    width: 280px;
+    height: 400px;
     position: relative;
     border: solid #8EFF8B;
 }
 
-/* ========== IMG STATUS CONTAINER ========== */
-
 .residents__img-container {
-    width: 431px;
-    height: 402px;
+    width: 274px;
+    height: 240px;
 }
 
 .residents__img {
     width: 100%;
-    height: 402px;
+    height: 240px;
 }
-
 
 .info__status {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: .5rem;
     border: solid #8EFF8B;
-    width: 180px;
-    height: 42px;
-    align-items: center;
     padding: .5rem;
+    width: 90px;
+    height: 30px;
     position: absolute;
-    top: 300px;
-    left: 125px;
-    font-size: 18px;
+    top: 170px;
+    left: 95px;
+    font-size: 14px;
     background-color: rgba(2, 10, 2, 0.8);
     color: #ffffff; 
 }
 
 .status {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+    width: 10px;
+    height: 10px;
 }
 
 
-/* ========== INFO CONTAINER ========== */
+/* =================== INFO CONTAINER ===================== */
 
 .residents__info-container {
-    width: 437px;
-    height: 238px;
+    width: 280px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 20px 15px;
-
 }
 
 .residents__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid;
     color: #ffffff;
 }
 
 .residents__p {
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
 }
 
 .residents__span {
-    font-size: 16px;
-    color: rgb(92, 86, 86);
+    font-size: 12px;
+    color: rgb(223, 190, 190);
     margin-right: 15px;
 }
 
@@ -82,6 +76,7 @@
 .location__container {
     display: flex;
     border: solid rgba(68, 104, 172, 0.966);
+    width: 304.75px;
 }
 
 .location__info {
@@ -89,18 +84,20 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 140px;
-    height: 70px;
+    width: 74.50px;
+    height: 48px;
 }
 
 .location__title {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 12px;
+    text-align: center;
 }
 
 .location__p {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 9px;
+    text-align: center;
 }
 
 /* =============================== PAGE =========================== */
@@ -109,84 +106,34 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 5px;
     grid-row-gap: 0px;
 }
 
 .page__p {
+    font-size: 12px;
     color: #ffffff;
     text-align: center;
 }
 
 .page__btn {
-    width: 80px;
+    width: 18.8vw;
     height: 20px;
+    font-size: 12px;
     background-color: #3a9637;
     color: #fbfbfb;
 }
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
 
-    /* =============================== RESIDENTINFO =========================== */
-
-    .residents__card {
-        display: grid; 
-        grid-template-rows: 1fr;
-        width: 280px;
-        height: 400px;
-    }
-
-    .residents__img-container {
-        width: 274px;
-        height: 240px;
-    }
-    
-    .residents__img {
-        width: 100%;
-        height: 240px;
-    }
-    
-    
-    .info__status {
-        width: 90px;
-        height: 30px;
-        top: 170px;
-        left: 95px;
-        font-size: 14px;
-    }
-    
-    .status {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* ========== INFO CONTAINER ========== */
-
-    .residents__info-container {
-        width: 280px;
-        height: 160px;
-        display: flex;
-    }
-
-    .residents__title {
-        font-size: 1.5rem;
-    }
-
-    .residents__p {
-        font-size: 16px;
-    }
-
-    .residents__span {
-        font-size: 12px;
-        color: rgb(223, 190, 190);
-        margin-right: 15px;
-    }
-
+@media screen and (min-width: 420px) and (max-width: 550px) {
     /* =============================== LOCATION =========================== */
 
     .location__container {
         display: flex;
+        flex-direction: unset;
+        flex-wrap: nowrap;
         border: solid rgba(68, 104, 172, 0.966);
+        width: 304.75px;
     }
 
     .location__info {
@@ -195,707 +142,109 @@
         justify-content: space-around;
         align-items: center;
         width: 20.4vw;
-        height: 35px;
+        height: 50px;
     }
 
     .location__title {
-        color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 13px;
     }
 
     .location__p {
-        color: #ffffff;
-        font-size: 9px;
+        font-size: 11px;
     }
 
  /* =============================== PAGE =========================== */
-
-     .page {
-        grid-column-gap: 5px;
-    }
-    
-    .page__p {
-        font-size: 12px;
-    }
-    
-    .page__btn {
-        width: 18.8vw;
-        height: 20px;
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 376px) and (max-width: 420px) {
-
-    /* =============================== RESIDENTINFO =========================== */
-
-    .residents__card {
-        display: grid; 
-        grid-template-rows: 1fr;
-        width: 280px;
-        height: 400px;
-    }
-
-    .residents__img-container {
-        width: 274px;
-        height: 240px;
-    }
-    
-    .residents__img {
-        width: 100%;
-        height: 240px;
-    }
-    
-    
-    .info__status {
-        width: 90px;
-        height: 30px;
-        top: 170px;
-        left: 95px;
-        font-size: 14px;
-    }
-    
-    .status {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* ========== INFO CONTAINER ========== */
-
-    .residents__info-container {
-        width: 280px;
-        height: 160px;
-        display: flex;
-    }
-
-    .residents__title {
-        font-size: 1.5rem;
-    }
-
-    .residents__p {
-        font-size: 16px;
-    }
-
-    .residents__span {
-        font-size: 12px;
-        color: rgb(223, 190, 190);
-        margin-right: 15px;
-    }
-
-    /* =============================== LOCATION =========================== */
-
-    .location__container {
-        display: flex;
-        border: solid rgba(68, 104, 172, 0.966);
-    }
-
-    .location__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 20.4vw;
-        height: 35px;
-    }
-
-    .location__title {
-        color: #ffffff;
-        font-size: 3.5vw;
-    }
-
-    .location__p {
-        color: #ffffff;
-        font-size: 9px;
-    }
-
- /* =============================== PAGE =========================== */
-
-     .page {
-        grid-column-gap: 5px;
-    }
-    
-    .page__p {
-        font-size: 12px;
-    }
-    
-    .page__btn {
-        width: 18.8vw;
-        height: 20px;
-        font-size: 12px;
-    }
-
-    
-
-}
-
-@media screen and (min-width: 421px) and (max-width: 475px) {
-
-    /* =============================== RESIDENTINFO =========================== */
-
-    .residents__card {
-        display: grid; 
-        grid-template-rows: 1fr;
-        width: 280px;
-        height: 400px;
-    }
-
-    .residents__img-container {
-        width: 274px;
-        height: 240px;
-    }
-    
-    .residents__img {
-        width: 100%;
-        height: 240px;
-    }
-    
-    
-    .info__status {
-        width: 90px;
-        height: 30px;
-        top: 170px;
-        left: 95px;
-        font-size: 14px;
-    }
-    
-    .status {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* ========== INFO CONTAINER ========== */
-
-    .residents__info-container {
-        width: 280px;
-        height: 160px;
-        display: flex;
-    }
-
-    .residents__title {
-        font-size: 1.5rem;
-    }
-
-    .residents__p {
-        font-size: 16px;
-    }
-
-    .residents__span {
-        font-size: 12px;
-        color: rgb(223, 190, 190);
-        margin-right: 15px;
-    }
-
-    /* =============================== LOCATION =========================== */
-
-    .location__container {
-        display: flex;
-        border: solid rgba(68, 104, 172, 0.966);
-    }
-
-    .location__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 20.4vw;
-        height: 40px;
-    }
-
-    .location__title {
-        color: #ffffff;
-        font-size: 3.5vw;
-    }
-
-    .location__p {
-        color: #ffffff;
-        font-size: 2.3vw;
-    }
-
- /* =============================== PAGE =========================== */
-
-     .page {
-        grid-column-gap: 5px;
-    }
-    
-    .page__p {
-        font-size: 12px;
-    }
-    
     .page__btn {
         width: 80px;
-        height: 20px;
-        font-size: 12px;
     }
-
-    
-
 }
 
-@media screen and (min-width: 476px) and (max-width: 520px) {
-
-    /* =============================== RESIDENTINFO =========================== */
-
-    .residents__card {
-        display: grid; 
-        grid-template-rows: 1fr;
-        width: 280px;
-        height: 400px;
-    }
-
-    .residents__img-container {
-        width: 274px;
-        height: 240px;
-    }
-    
-    .residents__img {
-        width: 100%;
-        height: 240px;
-    }
-    
-    
-    .info__status {
-        width: 90px;
-        height: 30px;
-        top: 170px;
-        left: 95px;
-        font-size: 14px;
-    }
-    
-    .status {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* ========== INFO CONTAINER ========== */
-
-    .residents__info-container {
-        width: 280px;
-        height: 160px;
-        display: flex;
-    }
-
-    .residents__title {
-        font-size: 1.5rem;
-    }
-
-    .residents__p {
-        font-size: 16px;
-    }
-
-    .residents__span {
-        font-size: 12px;
-        color: rgb(223, 190, 190);
-        margin-right: 15px;
-    }
+@media screen and (min-width: 551px) and (max-width: 680px) {
 
     /* =============================== LOCATION =========================== */
 
     .location__container {
-        display: flex;
-        border: solid rgba(68, 104, 172, 0.966);
+        width: 425px;
+        flex-direction: unset;
+        flex-wrap: nowrap;
     }
 
     .location__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 20.4vw;
-        height: 40px;
-    }
-
-    .location__title {
-        color: #ffffff;
-        font-size: 3.5vw;
-    }
-
-    .location__p {
-        color: #ffffff;
-        font-size: 2.3vw;
-    }
-
- /* =============================== PAGE =========================== */
-
-     .page {
-        grid-column-gap: 5px;
-    }
-    
-    .page__p {
-        font-size: 12px;
-    }
-    
-    .page__btn {
-        width: 80px;
-        height: 20px;
-        font-size: 12px;
-    }
-
-    
-
-}
-
-@media screen and (min-width: 521px) and (max-width: 575px) {
-
-    /* =============================== RESIDENTINFO =========================== */
-
-    .residents__card {
-        display: grid; 
-        grid-template-rows: 1fr;
-        width: 280px;
-        height: 400px;
-    }
-
-    .residents__img-container {
-        width: 274px;
-        height: 240px;
-    }
-    
-    .residents__img {
-        width: 100%;
-        height: 240px;
-    }
-    
-    
-    .info__status {
-        width: 90px;
-        height: 30px;
-        top: 170px;
-        left: 95px;
-        font-size: 14px;
-    }
-    
-    .status {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* ========== INFO CONTAINER ========== */
-
-    .residents__info-container {
-        width: 280px;
-        height: 160px;
-        display: flex;
-    }
-
-    .residents__title {
-        font-size: 1.5rem;
-    }
-
-    .residents__p {
-        font-size: 16px;
-    }
-
-    .residents__span {
-        font-size: 12px;
-        color: rgb(223, 190, 190);
-        margin-right: 15px;
-    }
-
-    /* =============================== LOCATION =========================== */
-
-    .location__container {
-        display: flex;
-        border: solid rgba(68, 104, 172, 0.966);
-    }
-
-    .location__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         width: 107px;
-        height: 40px;
+        height: 60px;
     }
 
     .location__title {
-        color: #ffffff;
-        font-size: 3.5vw;
-    }
-
-    .location__p {
-        color: #ffffff;
-        font-size: 2.3vw;
-    }
-
- /* =============================== PAGE =========================== */
-
-     .page {
-        grid-column-gap: 5px;
-    }
-    
-    .page__p {
-        font-size: 12px;
-    }
-    
-    .page__btn {
-        width: 80px;
-        height: 20px;
-        font-size: 12px;
-    }
-
-    
-
-}
-
-@media screen and (min-width: 576px) and (max-width: 620px) {
-
-    /* =============================== RESIDENTINFO =========================== */
-
-    .residents__card {
-        display: grid; 
-        grid-template-rows: 1fr;
-        width: 280px;
-        height: 400px;
-    }
-
-    .residents__img-container {
-        width: 274px;
-        height: 240px;
-    }
-    
-    .residents__img {
-        width: 100%;
-        height: 240px;
-    }
-    
-    
-    .info__status {
-        width: 90px;
-        height: 30px;
-        top: 170px;
-        left: 95px;
-        font-size: 14px;
-    }
-    
-    .status {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* ========== INFO CONTAINER ========== */
-
-    .residents__info-container {
-        width: 280px;
-        height: 160px;
-        display: flex;
-    }
-
-    .residents__title {
-        font-size: 1.5rem;
-    }
-
-    .residents__p {
         font-size: 16px;
     }
 
-    .residents__span {
+    .location__p {
         font-size: 12px;
-        color: rgb(223, 190, 190);
-        margin-right: 15px;
     }
+
+ /* =============================== PAGE =========================== */
+    
+    .page__btn {
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 681px) and (max-width: 1200px) {
 
     /* =============================== LOCATION =========================== */
 
     .location__container {
-        display: flex;
-        border: solid rgba(68, 104, 172, 0.966);
+        width: 440px;
+        flex-direction: unset;
+        flex-wrap: nowrap;
     }
 
     .location__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         width: 107px;
-        height: 40px;
+        height: 60px;
     }
 
     .location__title {
-        color: #ffffff;
-        font-size: 3.5vw;
-    }
-
-    .location__p {
-        color: #ffffff;
-        font-size: 2.3vw;
-    }
-
- /* =============================== PAGE =========================== */
-
-     .page {
-        grid-column-gap: 5px;
-    }
-    
-    .page__p {
-        font-size: 12px;
-    }
-    
-    .page__btn {
-        width: 80px;
-        height: 20px;
-        font-size: 12px;
-    }
-
-    
-
-}
-
-@media screen and (min-width: 720px) and (max-width: 775px) {
-
-    /* =============================== RESIDENTINFO =========================== */
-
-    .residents__card {
-        display: grid; 
-        grid-template-rows: 1fr;
-        width: 280px;
-        height: 400px;
-    }
-
-    .residents__img-container {
-        width: 274px;
-        height: 240px;
-    }
-    
-    .residents__img {
-        width: 100%;
-        height: 240px;
-    }
-    
-    
-    .info__status {
-        width: 90px;
-        height: 30px;
-        top: 170px;
-        left: 95px;
-        font-size: 14px;
-    }
-    
-    .status {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* ========== INFO CONTAINER ========== */
-
-    .residents__info-container {
-        width: 280px;
-        height: 160px;
-        display: flex;
-    }
-
-    .residents__title {
-        font-size: 1.5rem;
-    }
-
-    .residents__p {
         font-size: 16px;
     }
 
-    .residents__span {
+    .location__p {
         font-size: 12px;
-        color: rgb(223, 190, 190);
-        margin-right: 15px;
     }
+
+ /* =============================== PAGE =========================== */
+    
+    .page__btn {
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
 
     /* =============================== LOCATION =========================== */
 
     .location__container {
-        display: flex;
-        border: solid rgba(68, 104, 172, 0.966);
+        width: 440px;
+        flex-direction: unset;
+        flex-wrap: nowrap;
     }
 
     .location__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         width: 107px;
-        height: 40px;
+        height: 60px;
     }
 
     .location__title {
-        color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 16px;
     }
 
     .location__p {
-        color: #ffffff;
-        font-size: 2.3vw;
+        font-size: 12px;
     }
 
  /* =============================== PAGE =========================== */
-
-     .page {
-        grid-column-gap: 5px;
-    }
-    
-    .page__p {
-        font-size: 12px;
-    }
     
     .page__btn {
         width: 80px;
-        height: 20px;
-        font-size: 12px;
     }
-
-    
-
 }
-
-/* 
-@media screen and (min-width: 720px) and (max-width: 775px) {
-
-    /* ========== INFO CONTAINER ========== 
-
-.residents__span {
-    color: rgba(229, 235, 224, 0.575);
-}
-
- =============================== LOCATION =========================== 
-
-.location__info {
-    width: 123px;
-    height: 60px;
-}
-
-.location__title {
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.location__p {
-    color: #ffffff;
-    font-size: 12px;
-}
-
-/* =============================== PAGE =========================== 
-
-.page {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-}
-
-.page__p {
-    color: #ffffff;
-    text-align: center;
-}
-
-.page__btn {
-    width: 80px;
-    height: 20px;
-    transition: all .3s;
-}
-
-.page__btn:hover {
-    background-color: #8EFF8B;
-    color: #111111;
-    -webkit-box-shadow: 30px 23px 23px -8px rgba(134,184,40,1);
-    -moz-box-shadow: 30px 23px 23px -8px rgba(134,184,40,1);
-    box-shadow: 30px 23px 23px -8px rgba(134,184,40,1);
-}
-
-} */
